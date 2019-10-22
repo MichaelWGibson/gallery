@@ -285,7 +285,7 @@ demo = {
   },
 
   initGoogleMaps: function() {
-    var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+    var myLatlng = new google.maps.LatLng(40.2518, -111.6493);
     var mapOptions = {
       zoom: 13,
       center: myLatlng,
@@ -386,6 +386,46 @@ demo = {
 
     // To add the marker to the map, call setMap();
     marker.setMap(map);
+
+    var icons = [
+      "http://maps.google.com/mapfiles/ms/icons/yellow.png",
+      "http://maps.google.com/mapfiles/ms/icons/red.png",
+      "http://maps.google.com/mapfiles/ms/icons/blue.png",
+      "http://maps.google.com/mapfiles/ms/icons/green.png",
+      "http://maps.google.com/mapfiles/ms/icons/white.png",
+      "http://maps.google.com/mapfiles/ms/icons/black.png"
+    ];
+
+
+
+    for(var i=0; i <30; i++){
+  
+
+    var index = Math.floor(Math.random() * 6) + 1;
+
+
+    var lat = Math.random() * .05;
+    lat = lat * (Math.floor(Math.random()*2) == 1? 1 : -1);
+    var long = Math.random() * .05;
+    long = long * (Math.floor(Math.random()*2) == 1? 1: -1);
+
+    var latlng = new google.maps.LatLng(40.2518 + lat, -111.6493 + long);
+
+
+      marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        icon: icons[index],
+      });
+
+      google.maps.event.addListener(marker, 'click', function() {
+        location.href = "./user.html";
+      });
+    }
+
+
+    
+    //marker.setMap(map);
   },
 
   showNotification: function(from, align) {
