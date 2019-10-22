@@ -28,6 +28,9 @@ function test1(){
     title.innerHTML = localStorage.title;
     var img = document.getElementsByClassName("av")[0];
     img.src = localStorage.picSrc;
+
+    var price = document.getElementsByTagName("h6")[0];
+    price.innerHTML = "Total: $" + localStorage.price;
     
 }
 
