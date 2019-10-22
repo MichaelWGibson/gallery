@@ -24,7 +24,7 @@ The above copyright notice and this permission notice shall be included in all c
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Model Gallery
+    Check out
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -37,24 +37,31 @@ The above copyright notice and this permission notice shall be included in all c
   <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
-<body onload="clearStorage()" class="">
+<body onload="test1()" class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="white" data-active-color="danger">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-
-        <a href="" class="simple-text logo-normal" style="text-align: center;">
-          PrintX
+        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+          <div class="logo-image-small">
+            <img src="../assets/img/logo-small.png">
+          </div>
+        </a>
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Creative Tim
+          <!-- <div class="logo-image-big">
+            <img src="../assets/img/logo-big.png">
+          </div> -->
         </a>
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="active ">
+          <li>
             <a href="./dashboard.html">
               <i class="nc-icon nc-bank"></i>
-              <p>Model Gallery</p>
+              <p>Dashboard</p>
             </a>
           </li>
           <li>
@@ -75,7 +82,7 @@ The above copyright notice and this permission notice shall be included in all c
               <p>Notifications</p>
             </a>
           </li>
-          <li>
+          <li class="active ">
             <a href="./user.html">
               <i class="nc-icon nc-single-02"></i>
               <p>User Profile</p>
@@ -93,7 +100,12 @@ The above copyright notice and this permission notice shall be included in all c
               <p>Typography</p>
             </a>
           </li>
-
+          <li class="active-pro">
+            <a href="./upgrade.html">
+              <i class="nc-icon nc-spaceship"></i>
+              <p>Upgrade to PRO</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -109,7 +121,7 @@ The above copyright notice and this permission notice shall be included in all c
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Model Gallery</a>
+            <a class="navbar-brand" href="#pablo">Check Out</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -162,176 +174,130 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </nav>
       <!-- End Navbar -->
-      <!-- <div class="panel-header panel-header-lg">
-
-  <canvas id="bigDashboardChart"></canvas>
+      <!-- <div class="panel-header panel-header-sm">
 
 
 </div> -->
       <div class="content">
-
         <div class="row">
+          <div class="col-md-4">
+            <div class="card card-user">
+              <div class="image">
+                
+              </div>
+              <div class="card-body">
+                <div class="author">
+                  
+                    <img class="av" src="" alt="...">
+                    <h5 class="title"></h5>
 
-          <div  class="col-md-4">
-            <a onclick="test(this)" href="checkout.html">
-              <div id="temple" class="card ">
-                  <div class="card-header ">
-                    <h5 class="card-title">Temple</h5>
-                    <p class="card-category">Elegant White</p>
-                  </div>
-                  <image src="../assets/img/models/temple.jpg"  hspace="20px">
-    
-                  </image>
-                  <div class="card-footer ">
-                    <div class="legend">
-                      <i class="fa fa-circle text-primary"></i> Available Capacity
+                  
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Color</label>
+                                <select name="color">
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                </select>
+                            </div>                           
+                        </div>
+                        <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Filament</label>
+                                    <select name="filament">
+                                        <option value="pla">PLA</option>
+                                        <option value="abs">ABS</option>
+                                        <option value="tpu">TPU</option>
+                                    </select>
+                                </div>                           
+                            </div>
                     </div>
-                    <hr>
-                    <div class="stats">
-                      <i class="nc-icon nc-cart-simple"></i> $12.57
+ 
+                </form>
+              </div>
+            </div>
+ 
+          </div>
+          <div class="col-md-8">
+            <div class="card card-user">
+              <div class="card-header">
+                <h5 class="card-title">Continue Checkout</h5>
+              </div>
+              <div class="card-body">
+                <form>
+  
+                  <div class="row">
+                    <div class="col-md-6 pr-1">
+                      <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" >
+                      </div>
+                    </div>
+                    <div class="col-md-6 pl-1">
+                      <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control">
+                      </div>
                     </div>
                   </div>
-                </div>
-            </a> 
-          </div>
-
-          <div class="col-md-4">
-            <a onclick="test(this)" href="checkout.html">
-              <div class="card ">
-                <div class="card-header ">
-                  <h5 class="card-title">Death Star</h5>
-                  <p class="card-category">Chromatic grey</p>
-                </div>
-                <image src="../assets/img/models/deathStar.jfif"  hspace="20px">
-
-                </image>
-                <div class="card-footer ">
-                  <div class="legend">
-                    <i class="fa fa-circle text-warning"></i> Capacity Available Tommorow
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Address</label>
+                        <input type="text" class="form-control" >
+                      </div>
+                    </div>
                   </div>
-                  <hr>
-                  <div class="stats">
-                    <i class="nc-icon nc-cart-simple"></i> $16.25
+                  <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control" placeholder="City" >
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label>Country</label>
+                        <input type="text" class="form-control" placeholder="Country" >
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label>Postal Code</label>
+                        <input type="number" class="form-control" placeholder="ZIP Code">
+                      </div>
+                    </div>
                   </div>
-                </div>
+ 
+                  <div class="row">
+                    <div class="update ml-auto mr-auto">
+                      <button type="submit" class="btn btn-primary btn-round">Checkout</button>
+                    </div>
+                  </div>
+                </form>
               </div>
-            </a>
+            </div>
           </div>
-          
-          <div class="col-md-4">
-            <a onclick="test(this)" href="checkout.html">
-              <div class="card ">
-                <div class="card-header ">
-                  <h5 class="card-title">Figurine</h5>
-                  <p class="card-category">Cream</p>
-                </div>
-                <image src="../assets/img/models/figure3.jpg"  hspace="20px" >
-
-                </image>  
-                <div class="card-footer ">
-                  <div class="legend">
-                    <i class="fa fa-circle text-primary"></i> Available Capacity
-                  </div>
-                  <hr>
-                  <div class="stats">
-                    <i class="nc-icon nc-cart-simple"></i> $6.57
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
         </div>
-      
-        <div class="row">
-
-          <div class="col-md-4">
-            <a onclick="test(this)" href="checkout.html">
-              <div class="card ">
-                <div class="card-header ">
-                  <h5 class="card-title">Lion</h5>
-                  <p class="card-category">Cream</p>
-                </div>
-                <image src="../assets/img/models/lion.jpg"  hspace="20px" >
-
-                </image>
-                <div class="card-footer ">
-                  <div class="legend">
-                    <i class="fa fa-circle text-primary"></i> Available Capacity
-                  </div>
-                  <hr>
-                  <div class="stats">
-                    <i class="nc-icon nc-cart-simple"></i> $7.97
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        
-
-          <div class="col-md-4">
-            <a onclick="test(this)" href="checkout.html">
-              <div class="card ">
-                <div class="card-header ">
-                  <h5 class="card-title">Lion</h5>
-                   <p class="card-category">Cream</p>
-                </div>
-                <image src="../assets/img/models/ring.jpg"  hspace="20px" >
-
-                </image>
-                <div class="card-footer ">
-                  <div class="legend">
-                    <i class="fa fa-circle text-primary"></i> Available Capacity
-                  </div>
-                  <hr>
-                  <div class="stats">
-                    <i class="nc-icon nc-cart-simple"></i> $6.34
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-      
-          <div class="col-md-4">
-            <a onclick="test(this)" href="checkout.html">
-              <div class="card ">
-                <div class="card-header ">
-                  <h5 class="card-title">Lion</h5>
-                  <p class="card-category">Cream</p>
-                </div>
-                <image src="../assets/img/models/ornament.jpg"  hspace="20px" >
-
-                </image>
-                <div class="card-footer ">
-                  <div class="legend">
-                    <i class="fa fa-circle text-primary"></i> Available Capacity
-                  </div>
-                  <hr>
-                  <div class="stats">
-                    <i class="nc-icon nc-cart-simple"></i> $11.97
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
-        
       </div>
-      
       <footer class="footer footer-black  footer-white ">
         <div class="container-fluid">
           <div class="row">
             <nav class="footer-nav">
               <ul>
                 <li>
-                  <a href="" target="_blank">PrintX</a>
+                  <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
                 </li>
                 <li>
-                  <a href="" target="_blank">Blog</a>
+                  <a href="http://blog.creative-tim.com/" target="_blank">Blog</a>
                 </li>
                 <li>
-                  <a href="" target="_blank">Licenses</a>
+                  <a href="https://www.creative-tim.com/license" target="_blank">Licenses</a>
                 </li>
               </ul>
             </nav>
@@ -340,7 +306,7 @@ The above copyright notice and this permission notice shall be included in all c
                 ©
                 <script>
                   document.write(new Date().getFullYear())
-                </script>
+                </script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
               </span>
             </div>
           </div>
@@ -364,12 +330,6 @@ The above copyright notice and this permission notice shall be included in all c
   <script src="../assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
   <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
-      demo.initChartsPages();
-    });
-  </script>
 </body>
 
 </html>
